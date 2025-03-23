@@ -10,3 +10,11 @@ brew update
 brew install mongodb-community
 brew services start mongodb-community@8.0
 ```
+
+
+## Topics
+
+* Flutter
+* TypeScript
+* Tailwind
+* Zustand

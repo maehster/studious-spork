@@ -46,7 +46,7 @@ async def list_all_cars(
 @router.post("/", response_description="Add new car")
 async def create_car(request: Request, car: CarBase = Body(...)):
     car = jsonable_encoder(car)
-
+    print(car)
     new_car = await request.app.mongodb["cars1"].insert_one(car)
     created_car = await request.app.mongodb["cars1"].find_one(
         {"_id": new_car.inserted_id}
