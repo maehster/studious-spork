@@ -3,4 +3,4 @@ format:
 	poetry run black studious_spork
 
 run_backend:
-	poetry run uvicorn studious_spork.app:app --reload
+	poetry run uvicorn studious_spork.main:app --reload

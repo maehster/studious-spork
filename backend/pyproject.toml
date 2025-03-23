@@ -3,7 +3,10 @@ name = "studious-spork"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "David Grimm",email = "saempfglas@googlemail.com"}
+    { name = "David Grimm", email = "saempfglas@googlemail.com" }
+]
+packages = [
+    { include = "studious_spork" },
 ]
 requires-python = ">=3.12"
 dependencies = [
@@ -12,6 +15,9 @@ dependencies = [
     "pydantic (>=2.10.6,<3.0.0)",
     "ruff (>=0.9.6,<0.10.0)",
     "black (>=25.1.0,<26.0.0)",
+    "motor (>=3.7.0,<4.0.0)",
+    "dnspython (>=2.7.0,<3.0.0)",
+    "python-decouple (>=3.8,<4.0)",
 ]
 
 
