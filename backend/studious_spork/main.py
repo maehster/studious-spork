@@ -33,7 +33,8 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup_db_client():
     app.mongodb_client = AsyncIOMotorClient(DB_URL)
-    app.mongodb = app.mongodb_client[DB_NAME]
+    app.mongodb = app.mongodb_client.get_database("carsApp")
+    app.collection = app.mongodb.get_collection("cars1")
 
 
 @app.on_event("shutdown")

@@ -18,3 +18,8 @@ brew services start mongodb-community@8.0
 * TypeScript
 * Tailwind
 * Zustand
+
+
+## Links
+
+* https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/
